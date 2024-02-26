@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Portfolio HNG </title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+
+		<div class="grid-container">
+			<div class="header">
+				<h1> Portfolio de Héctor Núñez García 1ºDAW  </h1>
+				<p> En este portfolio podrás consultar mi curriculum hecho con puro HTML y CSS. </p>
+				<p>También verás que puedes rellenar un formulario de contacto, también hecho con HTML, que funciona con JavaScript.</p>
+			</div>
+			<div class="rightCol">
+				<div class="box">
+					<div class="left">
+						<center><img src="./img/pablo.jpg"></center>
+						<h2>Cualidades</h2>
+						<ul>
+							<li> Trabajo en equipo </li>
+							<li> Coordinación </li>
+							<li> Liderazgo </li>
+							<li> Disciplinado </li>
+						</ul>
+						<h2> Conocimientos </h2>
+						<ul>
+							<li> CSS </li>
+							<li> HTML </li>
+							<li> Java </li>
+							<li> JavaScript </li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="texto">
+							<h1> Héctor Núñez García </h1>
+							<h2> Biografía </h2>
+							<p> Desde siempre me ha gustado la informática tanto la parte hardware como la software. He tenido muy decidido qué estudiar desde siempre y no he tenido problemas con ello, por eso al estudiar y hacer las prácticas he acabado con muy buena experiencia.</p>
+							<h2> Cursos </h2>
+							<ol>
+								<li> IES Diego de Guzman y Quesada </li>
+								<li> IES San Sebastián 1º SMR </li>
+								<li> IES La Marisma 2º SMR </li>
+								<li> IES La Marisma 1º DAW </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="leftCol">
+				<form method="post">
+					<fieldset>
+						<legend> Datos personales</legend>
+						<span>Nombre:</span> <input id="nom" type="text" name="nombre1" id="nombre1" maxlength="40" required>
+						<span>Apellidos:</span> <input id="ape" type="text" name="apellidos1" id="ape1" maxlength="40" required>
+						<span>Correo electrónico:</span> <input id="email" type="email" name="correo" placeholder="Teclea el email" required>
+						<br> <br>
+						<span>Fecha de nacimiento:</span> <input id="fechita" type="date" name="fecha" max="2005-12-31"> 
+						<span>Lugar de nacimiento:</span>
+						<select name="provincias" id="seleccion">
+							<option value="Huelva">Huelva</option>
+							<option value="Cadiz">Cadiz</option>
+							<option value="Málaga">Málaga</option>
+							<option value="Sevilla">Sevilla</option>
+							<option value="Córdoba">Córdoba</option>
+							<option value="Almería">Almería</option>
+							<option value="Granada">Granada</option>
+							<option value="Jaén">Jaén</option>
+						</select>
+						<br> <br>
+						<span>Calidad del formulario:</span>
+							<input type="radio" value="Malísimo" id="calidad_malísimo" name="calidad"> Malísimo 
+							<input type="radio" value="Malo" id="calidad_malo" name="calidad"> Malo 
+							<input type="radio" value="Decente" id="calidad_decente" name="calidad"> Decente
+							<input type="radio" value="Bueno" id="calidad_bueno" name="calidad"> Bueno
+							<input type="radio" value="Perfecto" id="calidad_perfecto" name="calidad" checked> Perfecto
+						<br> <br>
+						<p> Puedes comentar una opinión sobre el tema que quieras en la siguiente caja de texto:</p>
+						<textarea id="comentario" placeholder="Introduzca el texto..." cols="50" rows="10"></textarea>
+						<br> <br>
+						<input type="submit" onclick="mostrarDatos()" value="Enviar">
+						<input type="reset" onclick="borrarDatos()" value="Limpiar">
+					</fieldset>
+				</form>
+			</div>
+			<div class="footer">
+				<p> Redes sociales de contacto: </p>
+				<a href="https://www.instagram.com/pablomotos/?hl=es" target="_blank"> Instagram </a>
+				<a href="https://www.youtube.com/elhormiguerooficial" target="_blank"> YouTube </a>
+				<a href="https://twitter.com/CFPabloMotos" target="_blank"> Twitter </a>
+			</div>
+		</div>
+	</body>
+</html>
